@@ -21,5 +21,11 @@ int main() {
 	printf("Die 1: %d\n", dice1);
 	printf("Die 2: %d\n", dice2);
 	printf("Total value: %d\n", sumDice);
+	
+	if(sumDice > 7) {
+		printf("%s won!", name);
+	}else {
+		printf("%s lost...", name);
+	}
 	return 0;
 }
