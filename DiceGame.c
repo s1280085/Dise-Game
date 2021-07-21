@@ -4,9 +4,14 @@
 
 int main() {
 	srand((unsigned int)time(NULL));
-	
+    
+    char name[10];
 	int dice1, dice2;
 	int sumDice;
+	
+	printf("What is your name?\n> ");
+	scanf("%s", name);
+	printf("Hello, %s!\n", name);
 	
 	dice1 = rand() % 6 + 1;
 	dice2 = rand() % 6 + 1;
